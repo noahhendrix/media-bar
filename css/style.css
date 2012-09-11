@@ -1,0 +1,65 @@
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10pt;
+}
+a:link {
+	text-decoration:none;
+	color: black;
+	
+}
+a:visited {
+	text-decoration:none;
+	color: black;
+}
+a:hover {
+	text-decoration:none;
+	color: black;
+}
+a:active {
+	text-decoration:none;
+	color: black;
+}
+
+
+#container {
+	margin: 0 auto;
+	padding: 20px 0 0 0;
+	width: 980px;
+}
+
+
+#mediabar{
+	display: block;
+	margin: 0 auto;
+	background-image:url("../img/mediaplayer.png");
+	width: 844px;
+	height: 38px;
+}
+
+ul.buttons{
+	list-style: none;
+	margin: 0 auto;
+}
+	ul li{
+		display: inline;
+	}
+	li a#30min{
+	float:left;
+	width: 60px;
+	background: rgba(0,0,0,0.32);
+	
+	}
+
+	li a#60min{
+	float:left;
+	width: 50px;
+	}
+
+	li a#day{
+	float:left;
+	width: 60px;
+	}
+	
+	
+	
+	#catNav li a#list-one-button
