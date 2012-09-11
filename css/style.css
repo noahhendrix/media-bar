@@ -24,11 +24,11 @@ a{
 	height: 38px;
 }
 
-ul.buttons{
+ul{
 list-style: none;
 }
 
-ul li{
+ul.buttons li{
 display: block;
 float:left;
 height: 29px;
@@ -94,26 +94,85 @@ background: url('../img/mediaplayer-active.png') no-repeat -110px 0;
 .time{
 	width: 92px;
 	text-align: center;
+	position: absolute;
+	margin: -4px 0 0 291px;
 	
 }
 
 
 
+/*              */
+/* Media Buttons*/
+/*              */
+
+
+ul#media{
+	width:178px;
+	height:37px;
+	position: absolute;
+	margin: 6px 0 0 400px;
+}
+
+ul#media li{
+	display: block;
+	float: left;
+}
+li.prev{
+	background: url('../img/playbuttons.png') no-repeat 0 -4px;
+	width: 24px;
+	height: 20px;
+	position: absolute;
+	margin: 4px 0 0px -40px
+}
+
+li.play{
+	background: url('../img/playbuttons.png') no-repeat -64px 0;
+	width: 23px;
+	height: 27px;
+	position: absolute;
+	margin: 0 0 0 22px;
+}
+
+li.next{
+	background: url('../img/playbuttons.png') no-repeat -123px -4px;
+	width: 24px;
+	height: 20px;
+	position: absolute;
+	margin: 4px 0 0 82px;
+}
+
+li.next a{
+	display: block;
+	width: 24px;
+	height: 20px;
+}
+
+
+
+
+
+/*               */
+/* VOLUME SLIDER */
+/*               */
+
+
 section {
 	width: 150px;
 	height: auto;
-	margin: 100px auto 0;
-	position: relative;
+	margin: 12px 0px 0px 160px;
+	padding: 0px 0px 0px 50px;
+	position: absolute;
 }
 #slider{
 	border-width: 1px;
 	border-style: solid;
 	border-color: #333 #333 #777 #333;
 	border-radius: 25px;
-	width: 100px;
+	width: 80px;
 	position: absolute;
-	height: 13px;
-	background-color: #8e8d8d;
+	margin: 4px 0 0 20px;
+	height: 6px;
+	background-color: #8f8d8d;
 	background: url('../img/bg-track.png') repeat top left;
     box-shadow: inset 0 1px 5px 0px rgba(0, 0, 0, .5), 
     				  0 1px 0 0px rgba(250, 250, 250, .5);
@@ -151,30 +210,31 @@ section {
 	right: -5px;
 	background: url('../img/volume.png') no-repeat 0 -50px;
 	position: absolute;
-	margin-top: -5px;
+	margin: -5px 0px 0px -26px;
+	padding: 0px 84px 0;
 }
 .ui-slider-handle {
 	position: absolute;
 	z-index: 2;
-	width: 25px;
-	height: 25px;
+	width: 11px;
+	height: 12px;
 	cursor: pointer;
 	background: url('../img/handle.png') no-repeat 50% 50%;
 	font-weight: bold;
 	color: #1C94C4;
 	outline: none;
-	top: -7px;
-	margin-left: -12px;
+	top: -3px;
+	margin-left: -9px;
 }
 .ui-slider-range {
 	background: #ffffff; /* Old browsers */
-	background: -moz-linear-gradient(top,  #ffffff 0%, #eaeaea 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eaeaea)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* IE10+ */
-	background: linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */
+	background: -moz-linear-gradient(top, #c5ff51 0%, #64ec15 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c5ff51), color-stop(100%,#64ec15)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #c5ff51 0%,#64ec15 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #c5ff51 0%,#64ec15 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #c5ff51 0%,#64ec15 100%); /* IE10+ */
+	background: linear-gradient(top,  #c5ff51 0%,#64ec15 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5ff51', endColorstr='#64ec15',GradientType=0 ); /* IE6-9 */
 	position: absolute;
 	border: 0;
 	top: 0;
