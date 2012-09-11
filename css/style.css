@@ -2,20 +2,8 @@ html, body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 10pt;
 }
-a:link {
-	text-decoration:none;
-	color: black;
-	
-}
-a:visited {
-	text-decoration:none;
-	color: black;
-}
-a:hover {
-	text-decoration:none;
-	color: black;
-}
-a:active {
+
+a{
 	text-decoration:none;
 	color: black;
 }
@@ -37,29 +25,68 @@ a:active {
 }
 
 ul.buttons{
-	list-style: none;
-	margin: 0 auto;
+list-style: none;
 }
-	ul li{
-		display: inline;
-	}
-	li a#30min{
-	float:left;
-	width: 60px;
-	background: rgba(0,0,0,0.32);
-	
-	}
 
-	li a#60min{
-	float:left;
+ul li{
+display: block;
+float:left;
+height: 29px;
+width: 50px;
+}
+
+li#min30{
+width: 59px;
+margin: 5px 0 0 -40px;
+text-align: center;
+}
+
+
+li#min30 a{
+margin:0 auto;
+padding: 5px 0px 0px 0px;
+position: absolute;
+}
+
+li#min30:hover{
+background: url('../img/mediaplayer-active.png') no-repeat 0 0;
+
+}
+
+
+li#min60{
+width: 50px;
+margin: 5px 0 0 0px;
+text-align: center;
+}
+
+li#min60 a{
+margin: 0 auto;
+padding: 5px 0 0 0;
+position: absolute;
+}
+
+li#min60:hover{
+background: url('../img/mediaplayer-active.png') no-repeat -59px 0;
 	width: 50px;
-	}
+	height: 29px;
+}
 
-	li a#day{
-	float:left;
-	width: 60px;
-	}
-	
-	
-	
-	#catNav li a#list-one-button
+li#day{
+width: 60px;
+margin: 5px 0 0 2px;
+text-align: center;
+}
+
+li#day a{
+margin: 0 auto;
+padding: 5px 0 0 0;
+position: absolute;
+}
+
+li#day:hover{
+background: url('../img/mediaplayer-active.png') no-repeat -110px 0;
+	width: 61px;
+	height: 29px;
+}
+
