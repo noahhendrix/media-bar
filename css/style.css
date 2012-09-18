@@ -9,14 +9,53 @@ a{
 	color: black;
 }
 
-
 #container {
 	margin: 0 auto;
-	padding: 20px 0 0 0;
-	width: 980px;
+	padding: 20px;
+	width: 880px;
+	height: 800px;
+	border: 1px solid #c9c9c9;
+	border-radius: 9px;
+	background-clip: padding-box;
+	background-color: #efefef;
+	box-shadow: inset 0 0 10px rgba(0,0,0,.75);
+
+#screen {
+	width: 618px;
+	height: 345px;
+	border: 2px solid #b7b7b7;
+	border-radius: 622px 0 0 0 / 0 0 0 0;
+	background-clip: padding-box;
+	background-color: #000;
+	margin: 0 auto;
+	position: absolute;
 }
 
+}
+#campaign{
+	width: 842px;
+	margin: 0 0 10px 20px;
+	text-align: left;
+}
+#ekg{
+	width: 842px;
+	height: 175px;
+	border: 2px solid #b1b1b1;
+	border-radius: 4px;
+	background-clip: padding-box;
+	background-color: #bdbdbd;
+	margin: 0 auto;
+}
 
+/*			  */
+/* MEDIA BAR */
+/*			*/
+
+
+
+#mediabarwrapper{
+	position: relative;
+}
 #mediabar{
 	display: block;
 	margin: 0 auto;
@@ -241,6 +280,13 @@ li.sendmessage:hover{
 	position: absolute;
 }
 
+li.sendmessage.active{
+	background: url('../img/mediaplayer-active.png') no-repeat -562px -5px;
+	width: 114px;
+	height: 29px;
+	margin: 0 0 0 -17px;
+	position: absolute;
+}
 
 li.sendmessage a{
 	margin:0 auto;
@@ -253,6 +299,24 @@ li.share{
 	width: 59px;
 	margin: 0px 0 0 100px;
 	text-align: center;
+}
+
+li.share:hover{
+	background: url('../img/mediaplayer-hover.png') no-repeat -677px -5px;
+	width: 64px;
+	height: 29px;
+	position: absolute;
+	margin: 0 0 0 98px;
+	
+}
+
+li.share.active{
+	background: url('../img/mediaplayer-active.png') no-repeat -677px -5px;
+	width: 64px;
+	height: 29px;
+	position: absolute;
+	margin: 0 0 0 98px;
+	
 }
 
 
@@ -275,6 +339,21 @@ li.score a{
 	position: absolute;
 }
 
+li.score:hover{
+	background: url('../img/mediaplayer-hover.png') no-repeat -742px -5px;
+	width: 100px;
+	height: 29px;
+	position: absolute;
+	margin: 0 0 0 162px;
+}
+
+li.score.active{
+	background: url('../img/mediaplayer-active.png') no-repeat -742px 0;
+	width: 100px;
+	height: 29px;
+	position: absolute;
+	margin: -1px 0 0 163px;
+}
 
 
 

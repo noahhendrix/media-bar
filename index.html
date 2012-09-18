@@ -9,86 +9,90 @@
     </head>
     <body>
 	    <div id="container">
-	    	<div id="mediabar">
-	    		<ul class="buttons">
-	    			<li id="min30"><a href="#">30 min</a></li>
-	    			<li id="min60"><a href="#">60 Min</a></li>
-	    			<li id="day"><a href="#">Day</a></li>
-	    		</ul>
-	    			<section>	
-		<span class="tooltip"></span> <!-- Tooltip -->
-		<div id="slider"></div> <!-- the Slider -->
-		<span class="volume"></span> <!-- Volume -->
-	</section>
-
-	<script src="js/jquery-1.7.2.min.js"></script>
-	<script src="js/jquery-ui-1.8.21.custom.min.js"></script>
-	<script>
-		$(function() {
-
-			//Store frequently elements in variables
-			var slider  = $('#slider'),
-				tooltip = $('.tooltip');
-
-			//Hide the Tooltip at first
-			tooltip.hide();
-
-			//Call the Slider
-			slider.slider({
-				//Config
-				range: "min",
-				min: 1,
-				value: 35,
-
-				start: function(event,ui) {
-				    tooltip.fadeIn('fast');
-				},
-
-				//Slider Event
-				slide: function(event, ui) { //When the slider is sliding
-
-					var value  = slider.slider('value'),
-						volume = $('.volume');
-
-					tooltip.css('left', value).text(ui.value);  //Adjust the tooltip accordingly
-
-					if(value <= 5) { 
-						volume.css('background-position', '0 0');
-					} 
-					else if (value <= 25) {
-						volume.css('background-position', '0 -25px');
-					} 
-					else if (value <= 75) {
-						volume.css('background-position', '0 -50px');
-					} 
-					else {
-						volume.css('background-position', '0 -75px');
-					};
-
-				},
-
-				stop: function(event,ui) {
-				    tooltip.fadeOut('fast');
-				},
-			});
-
-		});
-	</script>
-	<div class="time">
-		<p>6:14:59 PM</p>
-	</div>
-	<ul id="media">
-		<li class="prev"><a></a></li>
-		<li class="play"><a></a></li>
-		<li class="next"><a></a></li>
-	</ul>
-	<ul id="output">
-		<li class="sendmessage"><a href="#">Send Message</a></li>
-		<li class="share"><a href="#">Share</a></li>
-		<li class="score"><a href="#">Scorecard</a></li>
-	</ul>
-	    		
-	    	</div>
+	    	<div id="screen"></div>
+	    	<div id="campaign"> Campaign: Campaign Name</div>
+		    <div id="ekg"></div>
+	    	<div id="mediabarwrapper">
+		    	<div id="mediabar">
+		    		<ul class="buttons">
+		    			<li id="min30"><a href="#">30 min</a></li>
+		    			<li id="min60"><a href="#">60 Min</a></li>
+		    			<li id="day"><a href="#">Day</a></li>
+		    		</ul>
+		    		<section>	
+			    		<span class="tooltip"></span> <!-- Tooltip -->
+			    		<div id="slider"></div> <!-- the Slider -->
+			    		<span class="volume"></span> <!-- Volume -->
+			    	</section>
+	
+			    	<script src="js/jquery-1.7.2.min.js"></script>
+			    	<script src="js/jquery-ui-1.8.21.custom.min.js"></script>
+			    	<script>
+						$(function() {
+				
+							//Store frequently elements in variables
+							var slider  = $('#slider'),
+								tooltip = $('.tooltip');
+				
+							//Hide the Tooltip at first
+							tooltip.hide();
+				
+							//Call the Slider
+							slider.slider({
+								//Config
+								range: "min",
+								min: 1,
+								value: 35,
+				
+								start: function(event,ui) {
+								    tooltip.fadeIn('fast');
+								},
+				
+								//Slider Event
+								slide: function(event, ui) { //When the slider is sliding
+				
+									var value  = slider.slider('value'),
+										volume = $('.volume');
+				
+									tooltip.css('left', value).text(ui.value);  //Adjust the tooltip accordingly
+				
+									if(value <= 5) { 
+										volume.css('background-position', '0 0');
+									} 
+									else if (value <= 25) {
+										volume.css('background-position', '0 -25px');
+									} 
+									else if (value <= 75) {
+										volume.css('background-position', '0 -50px');
+									} 
+									else {
+										volume.css('background-position', '0 -75px');
+									};
+				
+								},
+				
+								stop: function(event,ui) {
+								    tooltip.fadeOut('fast');
+								},
+							});
+				
+						});
+					</script>
+					<div class="time">
+						<p>6:14:59 PM</p>
+					</div>
+					<ul id="media">
+						<li class="prev"><a></a></li>
+						<li class="play"><a></a></li>
+						<li class="next"><a></a></li>
+					</ul>
+					<ul id="output">
+						<li class="sendmessage"><a href="#">Send Message</a></li>
+						<li class="share"><a href="#">Share</a></li>
+						<li class="score"><a href="#">Scorecard</a></li>
+					</ul>    		
+				</div>
+	    	</div>		
 	    </div>	  			
     </body>
 </html>
