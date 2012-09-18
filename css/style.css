@@ -26,71 +26,89 @@ a{
 }
 
 ul{
-list-style: none;
+	list-style: none;
 }
 
 ul.buttons li{
-display: block;
-float:left;
-height: 29px;
-width: 50px;
+	display: block;
+	float:left;
+	height: 29px;
+	width: 50px;
 }
 
 li#min30{
-width: 59px;
-margin: 5px 0 0 -40px;
-text-align: center;
+	width: 59px;
+	margin: 0px 0 0 -40px;
+	text-align: center;
 }
 
 
 li#min30 a{
-margin:0 auto;
-padding: 5px 0px 0px 0px;
-position: absolute;
+	margin:5px auto;
+	padding: 5px 0px 0px 0px;
+	position: absolute;
 }
 
 li#min30:hover{
-background: url('../img/mediaplayer-active.png') no-repeat 0 0;
+	background: url('../img/mediaplayer-hover.png') no-repeat 0 0;
+	height: 38px;
+}
+
+li#min30.active{
+	background: url('../img/mediaplayer-active.png') no-repeat 0 0;
 
 }
 
 
 li#min60{
-width: 50px;
-margin: 5px 0 0 0px;
-text-align: center;
+	width: 50px;
+	margin: 0px 0 0 1px;
+	text-align: center;
 }
 
 li#min60 a{
-margin: 0 auto;
-padding: 5px 0 0 0;
-position: absolute;
+	margin: 5px auto;
+	padding: 5px 0 0 0;
+	position: absolute;
 }
 
 li#min60:hover{
-background: url('../img/mediaplayer-active.png') no-repeat -59px 0;
+	background: url('../img/mediaplayer-hover.png') no-repeat -59px 0;
+	width: 50px;
+	height: 38px;
+}
+
+li#min60.active{
+	background: url('../img/mediaplayer-active.png') no-repeat -59px 0;
 	width: 50px;
 	height: 29px;
 }
 
 li#day{
-width: 60px;
-margin: 5px 0 0 2px;
-text-align: center;
+	width: 60px;
+	margin: 0px 0 0 2px;
+	text-align: center;
 }
 
 li#day a{
-margin: 0 auto;
-padding: 5px 0 0 0;
-position: absolute;
+	margin: 5px  auto;
+	padding: 5px 0 0 0;
+	position: absolute;
 }
+
+li#day.active{
+	background: url('../img/mediaplayer-active.png') no-repeat -110px 0;
+	width: 61px;
+	height: 38px;
+	margin: 5px 0;
+}
+
 
 li#day:hover{
-background: url('../img/mediaplayer-active.png') no-repeat -110px 0;
+	background: url('../img/mediaplayer-hover.png') no-repeat -110px 0;
 	width: 61px;
-	height: 29px;
+	height: 38px;
 }
-
 
 .time{
 	width: 92px;
@@ -123,7 +141,17 @@ li.prev{
 	width: 24px;
 	height: 20px;
 	position: absolute;
-	margin: 4px 0 0px -40px
+	margin: 4px 0 0px -40px;
+	text-indent: -99999px;
+	
+}
+
+li.prev:hover{
+	background: url('../img/mediaplayer-hover.png') no-repeat -398px -10px;
+	width: 24px;
+	height: 27px;
+	position: absolute;
+	margin: 4px 0 0px -40px;
 }
 
 li.play{
