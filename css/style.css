@@ -19,8 +19,9 @@ a{
 	background-clip: padding-box;
 	background-color: #efefef;
 	box-shadow: inset 0 0 10px rgba(0,0,0,.75);
+}
 
-#screen {
+#video {
 	width: 618px;
 	height: 345px;
 	border: 2px solid #b7b7b7;
@@ -28,14 +29,18 @@ a{
 	background-clip: padding-box;
 	background-color: #000;
 	margin: 0 auto;
-	position: absolute;
+	float: left;
 }
 
+#stats{
+	
 }
 #campaign{
 	width: 842px;
 	margin: 0 0 10px 20px;
 	text-align: left;
+	float:left;
+	position: absolute;
 }
 #ekg{
 	width: 842px;
