@@ -21,6 +21,35 @@ a{
 	box-shadow: inset 0 0 10px rgba(0,0,0,.75);
 }
 
+#statsbox{
+	width: 196px;
+	height: 322px;
+	border: 2px solid #b7b7b7;
+	border-radius: 3px / 4px;
+	background-clip: padding-box;
+	background-color: #ededed;
+	background-image: linear-gradient(bottom, rgba(0,0,0,.1) 0%, rgba(255,255,255,.1) 100%);
+	margin: -3px auto;
+	
+
+}
+
+#statswrapper{
+	width: 200px;
+	height: 356px;
+	margin: 0 0 0 662px;
+}
+
+#switch-button{
+	background: url('../img/switch-window-sprite.png') no-repeat 0 0;
+	width: 201px;
+	height: 31px;
+	display: block;
+	margin: -7px 0px 3px 0px;
+	position: inherit;
+}
+
+
 #screen {
 	width: 618px;
 	height: 345px;
@@ -28,13 +57,13 @@ a{
 	border-radius: 622px 0 0 0 / 0 0 0 0;
 	background-clip: padding-box;
 	background-color: #000;
-	margin: 0 auto;
+	margin: 0 0 0  16px;
 	position: absolute;
 }
 
 #campaign{
 	width: 842px;
-	margin: 0 0 10px 20px;
+	margin: 5px 0 10px 20px;
 	text-align: left;
 }
 #ekg{
