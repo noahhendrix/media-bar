@@ -142,12 +142,18 @@ li.prev{
 	height: 20px;
 	position: absolute;
 	margin: 4px 0 0px -40px;
-	text-indent: -99999px;
-	
 }
 
 li.prev:hover{
 	background: url('../img/mediaplayer-hover.png') no-repeat -398px -10px;
+	width: 24px;
+	height: 27px;
+	position: absolute;
+	margin: 4px 0 0px -40px;
+}
+
+li.prev.active{
+	background: url('../img/mediaplayer-active.png') no-repeat -398px -4px;
 	width: 24px;
 	height: 27px;
 	position: absolute;
@@ -162,6 +168,22 @@ li.play{
 	margin: 0 0 0 22px;
 }
 
+li.play:hover{
+background: url('../img/mediaplayer-hover.png') no-repeat -462px -6px;
+	width: 23px;
+	height: 27px;
+	position: absolute;
+	margin: 0 0 0 22px;
+}
+
+li.play.active{
+background: url('../img/mediaplayer-active.png') no-repeat -462px 0px;
+	width: 23px;
+	height: 27px;
+	position: absolute;
+	margin: 0 0 0 22px;
+}
+
 li.next{
 	background: url('../img/playbuttons.png') no-repeat -123px -4px;
 	width: 24px;
@@ -170,11 +192,91 @@ li.next{
 	margin: 4px 0 0 82px;
 }
 
-li.next a{
-	display: block;
-	width: 24px;
+li.next:hover{
+	background: url('../img/mediaplayer-hover.png') no-repeat -520px -10px;
+	width: 25px;
 	height: 20px;
+	position: absolute;
+	margin: 4px 0 0 81px;
 }
+
+li.next.active{
+	background: url('../img/mediaplayer-active.png') no-repeat -520px -5px;
+	width: 25px;
+	height: 20px;
+	position: absolute;
+	margin: 4px 0 0 81px;
+}
+
+
+
+/*              */
+/* Media Buttons*/
+/*              */
+
+
+ul#output{
+	width:282px;
+	height:37px;
+	position: absolute;
+	margin: 6px 0 0 540px;
+}
+
+ul#output li{
+	display: block;
+	float:left;
+}
+
+li.sendmessage{
+	width: 59px;
+	margin: 0px 0 0 -3px;
+	text-align: center;
+}
+
+li.sendmessage:hover{
+	background: url('../img/mediaplayer-hover.png') no-repeat -562px -5px;
+	width: 114px;
+	height: 29px;
+	margin: 0 0 0 -18px;
+	position: absolute;
+}
+
+
+li.sendmessage a{
+	margin:0 auto;
+	padding: 5px 0px 0px 0px;
+	position: absolute;
+}
+
+
+li.share{
+	width: 59px;
+	margin: 0px 0 0 100px;
+	text-align: center;
+}
+
+
+li.share a{
+	margin:0 auto;
+	padding: 5px 0px 0px 0px;
+	position: absolute;
+}
+
+li.score{
+	width: 59px;
+	margin: 0px 0 0 183px;
+	text-align: center;
+}
+
+
+li.score a{
+	margin:0 auto;
+	padding: 5px 0px 0px 0px;
+	position: absolute;
+}
+
+
+
 
 
 
