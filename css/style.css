@@ -654,6 +654,22 @@ li.score.active{
 	
 }
 
+#userstatus p{
+	color: #009dcc;
+	font-size: 15px;
+	font-weight: 600;
+	margin: 10px 0 0 10px;
+}
+
+#userstatus span{
+	color: #000;
+	font-size: 18px;
+	font-weight: 300;
+	float: right;
+	margin-right: 5px;
+
+}
+
 #cartridgebar{
 	width: 470px;
 	height: 34px;
@@ -725,7 +741,77 @@ li.score.active{
 	display: inline-block;
 }
 
+.lightline{
+	width: 646px;
+	height: 32px;
+	background-color: #e3e3e3;
+	box-shadow: 0 0 0 1px rgba(179,179,179,.38);
 
+}
+
+.darkline{
+	width: 646px;
+	height: 32px;
+	background-color: #d7d7d7;
+	box-shadow: 0 0 0 1px rgba(179,179,179,.38);
+
+}
+
+
+ul#campaigns{
+	margin: -98px 0 0 156px;
+	position: absolute;
+}
+
+ul#campaigns li p{
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 5px 0 0 15px;
+	position: absolute;
+
+}
+
+ul.actions{
+	margin:5px 0 0 180px;
+	position: absolute;
+}
+
+ul.actions > li {
+	margin: 0px 0 5px 5px;
+	padding: 0 6px;
+	text-align: center;
+	line-height: 20px;
+	color: white;
+	font-size: 14px;
+	float: left;
+	display: inline;
+	border-radius: 3px;
+	-webkit-text-shadow: 1px 1px 1px black;
+	-moz-text-shadow: 1px 1px 1px black;
+	-ms-text-shadow: 1px 1px 1px black;
+	-o-text-shadow: 1px 1px 1px black;
+	text-shadow: 1px 1px 1px black;
+}
+
+.actions > li > a{
+color: #fff;
+}
+
+ul#data{
+	color: #000;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 7px 0 0 470px;
+	position: absolute;
+
+}
+
+ul#data li{
+	float: left;
+	display: block;
+	margin: 0 15px 0 15px;
+}
 
 /*               */
 /* END CARTRIDGE */
